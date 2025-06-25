@@ -1,70 +1,71 @@
 🌍 Climate Change CO₂ Emission Analysis
-A data-driven exploration and visualization project focused on understanding the patterns of CO₂ emissions across countries using real-world climate data.
+A data-driven project to explore and visualize global CO₂ emissions across countries using real-world climate data.
 
-📌 Project Objectives
-Analyze global CO₂ emissions data at the country level.
+🎯 Project Objectives
+Analyze global CO₂ emissions data at the country level
 
-Identify trends, correlations, and patterns in emission-related variables.
+Identify trends, correlations, and patterns among climate-related variables
 
-Visualize emissions data in meaningful and interactive ways.
+Visualize emissions data using both static and interactive charts
 
-Build a strong foundation for future machine learning or policy modeling.
+Build a foundation for future modeling, forecasting, or policy research
 
-🧰 Tools & Technologies Used
-Python – Core programming language
+🧰 Technologies Used
+Tool	Purpose
+Python	Core programming language
+Pandas	Data manipulation and analysis
+Seaborn, Matplotlib	Static data visualization
+Plotly Express	Interactive maps and charts
+Jupyter / VS Code	Development environment
 
-Pandas – Data cleaning and manipulation
+🗂️ Key Features & Workflow
+📥 1. Data Loading & Inspection
+Loaded data_cleaned.csv into a DataFrame
 
-Seaborn & Matplotlib – Static data visualizations
+Displayed dataset structure using .info() and .head()
 
-Plotly Express – Interactive visualizations and world maps
+Checked for missing/null values and column types
 
-Jupyter Notebook / VS Code – Development environment
+🧹 2. Data Cleaning
+Removed rows with missing or non-numeric values in key columns (co2_per_cap, etc.)
 
-🗂️ Key Steps and Features
-1. Data Loading & Inspection
-Loaded cleaned climate change dataset (data_cleaned.csv)
+📊 3. Exploratory Data Analysis (EDA)
+Generated descriptive statistics using .describe()
 
-Inspected dataset shape, data types, and column overview using data.info() and .head()
+Plotted a correlation heatmap to visualize relationships between numeric features
 
-2. Data Cleaning
-Checked for missing values across all columns
+Improved readability with annotations, color scaling, and formatting
 
-Filtered and cleaned rows with missing or non-numeric values in relevant columns (e.g., co2_per_cap)
+🧮 4. Multicollinearity Check
+Computed Variance Inflation Factor (VIF) to detect multicollinearity
 
-3. Exploratory Data Analysis (EDA)
-Used .describe() for summary statistics
+Prepared for future regression modeling or feature selection
 
-Created a correlation heatmap using Seaborn for numerical feature relationships
+🌐 5. Interactive World Map (Choropleth)
+Created a Plotly choropleth map using ISO country codes
 
-Adjusted heatmap size, label rotation, and annotation formatting for clarity
+Filtered for selected countries: IND, USA, PAK, RUS, NZL
 
-4. Multicollinearity Analysis (VIF)
-Added a reusable function to compute Variance Inflation Factor (VIF)
+Used distinct colors for each country instead of a single gradient
 
-Prepared the dataset for future regression modeling or dimensionality reduction
+Hover tooltips show CO₂ emissions per capita
 
-5. Interactive World Map
-Used Plotly choropleth maps to visualize CO₂ emissions per capita
+Fixed rendering in VS Code by setting:
 
-Initially used color gradients (Reds) for numeric representation
-
-Improved usability by:
-
-Switching to distinct colors per country using color="country"
-
-Displaying selected countries: IND, USA, PAK, RUS, NZL
-
-Customizing tooltips to include actual CO₂ emission values
-
-6. Plotly Rendering Fixes
-Resolved rendering issues in VS Code by switching to pio.renderers.default = "browser"
-
-Added HTML export option for browser-based interactivity (optional)
-
+python
+Copy
+Edit
+import plotly.io as pio  
+pio.renderers.default = "browser"
 📈 Output & Insights
-Clean, readable correlation heatmaps highlighting related metrics
+Heatmaps revealed variable correlations for exploratory insight
 
-Interactive world map allowing comparison of selected countries' emissions
+Interactive maps allowed visual country-wise comparisons
 
-Dataset prepared for downstream modeling or country-specific emission policy analysis
+Dataset is now clean and suitable for:
+
+Machine learning
+
+Time-series forecasting
+
+Policy modeling or reporting
