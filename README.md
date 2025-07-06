@@ -1,4 +1,4 @@
-🌍 Climate Change CO₂ Emission Analysis
+**🌍 Climate Change CO₂ Emission Analysis**
 A data-driven project to explore and visualize global CO₂ emissions across countries using real-world climate data.
 
 
