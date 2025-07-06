@@ -60,6 +60,9 @@ Prepared for future regression modeling or feature selection
 Created a Plotly choropleth map using ISO country codes
 
 
+🖨️ 6. Trained Model - https://drive.google.com/file/d/166YbcHne9IJW3prJU616xIOY74E4QQm7/view?usp=sharing
+
+
 Filtered for selected countries: IND, USA, PAK, RUS, NZL
 
 
