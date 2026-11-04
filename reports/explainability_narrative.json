@@ -1,0 +1,45 @@
+{
+  "ranked_features_by_shap": [
+    {
+      "rank": 1,
+      "feature": "en_per_cap",
+      "mean_abs_shap": 2.108136399949042
+    },
+    {
+      "rank": 2,
+      "feature": "gni_per_cap",
+      "mean_abs_shap": 0.8591528050946624
+    },
+    {
+      "rank": 3,
+      "feature": "urb_pop_growth_perc",
+      "mean_abs_shap": 0.3481957053902197
+    },
+    {
+      "rank": 4,
+      "feature": "pop_urb_aggl_perc",
+      "mean_abs_shap": 0.30945676838303676
+    },
+    {
+      "rank": 5,
+      "feature": "pop_growth_perc",
+      "mean_abs_shap": 0.26503162024955823
+    },
+    {
+      "rank": 6,
+      "feature": "cereal_yield",
+      "mean_abs_shap": 0.11917507036770254
+    },
+    {
+      "rank": 7,
+      "feature": "prot_area_perc",
+      "mean_abs_shap": 0.1181294667456294
+    }
+  ],
+  "key_insights": [
+    "Energy consumption per capita (en_per_cap) is the single most dominant driver of CO2 emissions per capita across all models.",
+    "Higher GNI per capita (gni_per_cap) correlates with higher carbon footprints, reflecting industrial and consumer consumption patterns.",
+    "Urban population growth and density (pop_urb_aggl_perc) exhibit non-linear effects: rapid unplanned urbanization correlates with infrastructure-driven emissions spikes.",
+    "Protected area percentage (prot_area_perc) serves as an environmental policy proxy, exhibiting moderate mitigating attribution."
+  ]
+}
